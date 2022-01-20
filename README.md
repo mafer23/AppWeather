@@ -34,14 +34,15 @@ Algunas personas ejecutan versiones anteriores de CLI o @angular-devkit/build-an
 
 2 Cree un archivo de configuración TailwindCSS en el espacio de trabajo o en la raíz del proyecto. Nombre ese archivo de configuración tailwind.config.js
 Debe tener un aspecto como este:
-module.exports = {
+<ul>
+<li>module.exports = {
     prefix: '',
     purge: {
       content: [
         './src/**/*.{html,ts}',
       ]
-    },
-    darkMode: 'class', // or 'media' or 'class'
+  },</li>
+   <li> darkMode: 'class', // or 'media' or 'class'
     theme: {
       extend: {},
     },
@@ -50,7 +51,8 @@ module.exports = {
     },
     plugins: [require('@tailwindcss/forms'),require('@tailwindcss/typography')],
 };
-
+  </li>
+</ul>
 3 En su archivo styles.scss agregue las siguientes importaciones de TailwindCSS:
 
 @import 'tailwindcss/base';
