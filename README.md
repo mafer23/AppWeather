@@ -54,5 +54,3 @@ si está utilizando CSS, no SCSS, su archivo debería tener este aspecto:
 Para Mayor Compresión puede ver el blog : https://dev.to/angular/setup-tailwindcss-in-angular-the-easy-way-1i5l
 
 
-## Angular Material
-ng add @angular/material
