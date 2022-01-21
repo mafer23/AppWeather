@@ -33,26 +33,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Algunas personas ejecutan versiones anteriores de CLI o @angular-devkit/build-angular. Asegúrese de que su paquete.json se vea AL MENOS con la versión 11.2.0 o tenga una versión más reciente (si está disponible)
 
 2 Cree un archivo de configuración TailwindCSS en el espacio de trabajo o en la raíz del proyecto. Nombre ese archivo de configuración tailwind.config.js
-Debe tener un aspecto como este:
-<ul>
-<li>module.exports = {
-    prefix: '',
-    purge: {
-      content: [
-        './src/**/*.{html,ts}',
-      ]
-  },</li>
-   <li> darkMode: 'class', // or 'media' or 'class'
-    theme: {
-      extend: {},
-    },
-    variants: {
-      extend: {},
-    },
-    plugins: [require('@tailwindcss/forms'),require('@tailwindcss/typography')],
-};
-  </li>
-</ul>
+Debe tener un aspecto como esta en el articulo:
+https://dev.to/angular/setup-tailwindcss-in-angular-the-easy-way-1i5l
+
+
+
 3 En su archivo styles.scss agregue las siguientes importaciones de TailwindCSS:
 
 @import 'tailwindcss/base';
