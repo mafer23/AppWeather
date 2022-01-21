@@ -2,21 +2,18 @@
   <div class="w-11/12 h-64 sm:w-52 sm:h-56 md:w-80 md:h-64 rounded-3xl overflow-hidden bg-purple-500 shadow-md ">
     <div class=" h-16 w-full text-white font-extrabold  text-xl flex items-center pl-5">AppWeather</div>
     <div class=" w-full h-56 bg-white  max-w-xl sm:w-full sm:h-56 md:w-full md:h-56  rounded-t-3xl  flex items-center justify-center ">
-      <form class="example-form pb-8 bg-white rounded-t-3xl  ">
-        <mat-form-field class="ml-4 example-full-width flex justify-center" appearance="legacy">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput placeholder="Ex. pat@example.com">
-        </mat-form-field>
+      <form [formGroup]="form" (ngSubmit)="save($event)" class="example-form pb-8 bg-white rounded-t-3xl  ">
+        <div class="w-11/12 m-auto mb-2">
+          <label for="" class="w-full text-gray-500">Email</label>
+          <input type="email" formControlName="email" name="email"
+            class="w-full border-gray-100 border-b-2 p-0 focus:ring-2 focus:ring-blue-600">
+        </div>
+        <div class="w-11/12 m-auto mb-2">
+          <label for="" class="w-full text-gray-500">Password</label>
+          <input type="password" formControlName="password" name="password"
+            class="w-full border-gray-100 border-b-2 p-0 focus:ring-2 focus:ring-blue-600">
+        </div>
 
-        <mat-form-field class="ml-4 example-full-width" appearance="legacy">
-          <mat-label>Enter your password</mat-label>
-          <input matInput [type]="hide ? 'password' : 'text'">
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
-
-        </mat-form-field>
         <div class=" w-full flex justify-center ">
           <div class="contact100-form-checkbox ">
               <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">

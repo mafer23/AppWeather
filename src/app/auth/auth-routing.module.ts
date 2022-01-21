@@ -18,7 +18,7 @@ const routes: Routes = [
      component: FormComponent
      },
     { path: '',
-      redirectTo: '/form',
+      redirectTo: '/registro',
       pathMatch: 'full'
      }
     ]
