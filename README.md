@@ -44,6 +44,7 @@ https://dev.to/angular/setup-tailwindcss-in-angular-the-easy-way-1i5l
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+<br>
 si está utilizando CSS, no SCSS, su archivo debería tener este aspecto:
 
 @tailwind base;
