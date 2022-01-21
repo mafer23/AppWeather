@@ -21,6 +21,7 @@ export class WeatherService {
       this.httpClient.get(`${this.URI}${cityName}`).subscribe((resp:any) =>{
         if (resp.ok) {
           this.clima = resp.data;
+
         }
           resolve(resp);
       },err => {
